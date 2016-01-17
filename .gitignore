@@ -1,0 +1,10 @@
+/env
+/bin
+/include
+/lib
+/static/node_modules
+/static/.sass-cache
+.DS_Store
+Thumbs.db
+*.pyc
+.*swp
