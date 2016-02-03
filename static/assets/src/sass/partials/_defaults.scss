@@ -1,0 +1,89 @@
+* { -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+html {
+    -webkit-text-size-adjust: none
+}
+body { 
+    color: $bodyColour;
+    font: $baseFontSetup;
+    background: $bodyBackground;
+}
+
+@media only screen and #{$palm} {
+    body { 
+        font: $palmFontSetup; 
+    }
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block
+}
+h1, h2, h3, h4, h5, h6, p, ul, ol, dl, blockquote, pre {
+    margin: 0 0 1em 0
+}
+h1, h2, h3, h4, h5, h6 {
+    font-style: normal;
+    font-weight: 200;
+}
+h1, .h1 {
+    font-size: 1.6em;
+}
+h2, .h2 {
+    font-size: 1.4em
+}
+h3, .h3 {
+    font-size: 1.2em
+}
+h4, .h4, h5, .h5, h6, .h6 {
+    font-weight: bold
+}
+.p {
+    font-size: 1em
+}
+ol, ul {
+    list-style-type: none;
+    list-style-position: outside;
+}
+table {
+    width: 100%;
+    text-align: left;
+    table-layout: fixed;
+}
+strong, .strong {
+    font-weight: bold;
+}
+em, .em {
+    font-style: italic
+}
+small, .small { 
+    font-size: 90%;
+}
+.smaller {
+    font-size: 70%;
+}
+img, object, embed {
+    max-width: 100%;
+    height: auto;
+}
+img {
+    -ms-interpolation-mode: bicubic;
+    box-sizing: content-box;
+}
+a {
+    color: $linkColour;
+    text-decoration: none;
+    }
+a:hover {
+    color: $linkColourHover;
+}
+
+pre {
+    font-family: Consolas, monospace;
+    background: #fff;
+    border-radius: 3px;
+    padding: 10px;
+}

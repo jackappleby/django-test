@@ -1,0 +1,22 @@
+.tag-autocomplete {
+    position: absolute;
+    max-height: 180px;
+    background: #fff;
+    border: 1px solid $brandColour;
+    border-top: 0;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0px 0px 1px rgba(0,0,0,0.1), 0px 2px 1px rgba(0,0,0,0.1);
+    overflow-x: auto;
+}
+.tag-autocomplete__item {
+    border-bottom: 1px solid #eee;
+    padding: 7px 15px;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+.tag-autocomplete__item:hover, .tag-autocomplete__item--active {
+    background: #eee;
+}
+.tag-autocomplete__item:first-child {
+    border-top: 1px solid #eee;
+}

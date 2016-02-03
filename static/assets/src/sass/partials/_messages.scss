@@ -1,0 +1,27 @@
+.message {
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 3px;
+    border: 1px solid #fff;
+}
+.message__error {
+    color: $errorColour; 
+    border-color: $errorColour; 
+}
+.message__warning {
+    color: $warningColour; 
+    border-color: $warningColour; 
+}
+.message__success {
+    color: $successColour; 
+    border-color: $successColour; 
+}
+.message a {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+.message a:hover {
+    border: none;
+}
+
+

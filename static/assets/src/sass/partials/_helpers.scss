@@ -1,0 +1,241 @@
+.float-left {
+    float: left !important;
+}
+.float-right {
+    float: right !important;
+}
+.float-none {
+    float: none !important;
+}
+
+.text-center {
+    text-align: center !important; 
+}
+.text-right {
+    text-align: right !important;
+}
+.text-left {
+    text-align: left !important;
+}
+
+.clear-left {
+    clear: left !important;
+}
+.clear-right {
+    clear: right !important;
+}
+.clear-both {
+    clear: both !important;
+}
+.cf:before, .cf:after {
+    content: "" !important;
+    display: table !important;
+}
+.cf:after {
+    clear: both !important;
+}
+.cf {
+    zoom: 1 !important;
+}
+
+.align-center {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 300px;
+}
+.align-center__inner {
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none;
+}
+
+.margin-none {
+    margin: 0 !important;
+}
+.margin-auto {
+    margin: 0 auto !important;
+}
+
+.padding-none {
+    padding: 0 !important;
+}
+
+.display-inline {
+    display: inline !important;
+}
+.display-block {
+    display: block !important;
+}
+.display-inline-block {
+    display: inline-block !important;
+}
+
+.bullet-disc {
+    list-style-type: disc !important;
+}
+.bullet-decimal {
+    list-style-type: decimal !important;
+}
+.bullet-square {
+    list-style-type: square !important;
+}
+.bullet-none {
+    list-style-type: none !important;
+}
+.bullet-disc, .bullet-square {
+    margin-left: 20px !important;
+}
+.list-spaced li {
+    margin-bottom: 10px !important;
+}
+
+.hide, .js .js-hide {
+    display: none;
+}
+.show, .js .js-show {
+    display: block;
+}
+.hidden {
+    position: absolute !important;
+    left: -99999px !important;
+    top: 0 !important;
+    width: 1px !important;
+    height: 1px !important;
+    overflow: hidden !important;
+}
+.visibility-hidden {
+    visibility: hidden !important;
+}
+
+.width-auto {
+    width: auto !important;
+}
+
+.mortar {
+    margin-bottom: $mortarDefault !important;
+}
+.mortar--smaller {
+    margin-bottom: 15px !important;
+}
+.mortar--larger {
+    margin-bottom: 60px !important;
+}
+.margin-left-mortar {
+    margin-left: $mortarDefault !important;
+}
+.margin-right-mortar {
+    margin-right: $mortarDefault !important;
+}
+@media only screen and #{$palm} {
+    .mortar {
+        margin-bottom: 15px !important;
+    }
+    .mortar--smaller {
+        margin-bottom: 5px !important;
+    }
+    .mortar--larger {
+        margin-bottom: 30px !important;
+    }
+}
+
+.border {
+    border: 1px solid $defaultGreyColour !important;
+}
+
+.pipe {
+    border-right: 1px solid $defaultGreyColour !important;
+    margin-right: 10px !important;
+    padding-right: 10px !important;
+}
+
+.word-divider {
+    overflow: hidden;
+    padding-left: 20px;
+}
+.word-divider:before,
+.word-divider:after {
+    background-color: #ddd;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+.word-divider:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+.word-divider:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+.underline {
+    border-bottom: 1px solid transparent !important;
+}
+.underline--white {
+    border-color: #fff !important;
+}
+.underline--grey {
+    border-color: $defaultGreyColour !important;
+}
+.underline--thicker {
+    border-width: 2px !important;
+}
+.lineheight-none {
+    line-height: 1 !important;
+}
+
+.link-underline {
+    background-image: -moz-linear-gradient(top, rgba(0,0,0,0) 50%, rgba(0,0,0,0.3) 50%) !important;
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 50%, rgba(0,0,0,0.3) 50%) !important;
+    background-image: -o-linear-gradient(top, rgba(0,0,0,0) 50%, rgba(0,0,0,0.3) 50%) !important;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.3) 50%) !important;
+    background-repeat: repeat-x !important;
+    background-size: 2px 2px !important;
+    background-position: 0 21px !important;
+}
+
+.colour-success {
+    color: $successColour !important;
+}
+.colour-error {
+    color: $errorColour !important;
+}
+.colour-warning {
+    color: $warningColour !important;
+}
+.colour-secondary-link {
+    color: $secondaryLinkColour !important;
+}
+
+.position-relative {
+    position: relative;
+}
+
+@-webkit-keyframes throb{
+    0%{color:#fff}100%{color:#ddd}
+}
+@-moz-keyframes throb{
+    0%{color:#fff}100%{color:#ddd}
+}
+@-keyframes throb{
+    0%{color:#fff}100%{color:#ddd}
+}
+.is-throbbing * {
+    -webkit-animation: throb .5s ease-out infinite;
+    -moz-animation:throb .5s ease-out infinite;
+    animation:throb .5s ease-out infinite
+}

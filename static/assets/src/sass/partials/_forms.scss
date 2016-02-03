@@ -1,0 +1,67 @@
+.field {
+    margin-bottom: 18px;
+}
+.field--radiobox {
+    margin-bottom: 8px;
+}
+.field__label {
+    display: block;
+    margin-bottom: 2px;
+}
+.field__input, .field__submit {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px; 
+    width: 100%;
+    font-size: 1em;
+    color: #333;
+    font: inherit;
+    outline: none;
+    transition: 0.1s;
+}
+.field__input {
+    line-height: 1.7em;
+    padding: 10px;
+}
+.field__input:focus {
+    background: #fff;
+    border: 1px solid $brandColour;
+}
+.field__input--select {
+    height: 46px;
+}
+.field__input--radiobox, .field__label--radiobox {
+    width: auto;
+    border: 0;
+    padding: 0;
+    display: inline
+}
+.field__input--search {
+    font-size: 1.1em;
+    padding: 12px 15px;
+    box-shadow: inset 0 0 1px rgba(0,0,0,.1), inset 0 2px 1px rgba(0,0,0,.1)
+}
+.field__textarea {
+    min-height: 150px
+}
+.field__loading {
+    padding-left: 50px;
+    background-image: url(../images/loading.svg);
+    background-repeat: no-repeat;
+    background-position: 1% 50%;
+}
+.field__helper {
+    margin-bottom: 8px;
+    font-size: 0.9em
+}
+
+.field--has-error .field__input {
+    border: 1px solid $errorColour;
+}
+.field__notice {
+    margin: 0;
+    text-align: right;
+    color: $errorColour;
+    font-size: 0.85em;
+}

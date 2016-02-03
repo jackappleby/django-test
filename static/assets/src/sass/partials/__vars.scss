@@ -1,0 +1,42 @@
+$baseFontSetup : 200 normal 90%/1.8 open_sansregular, sans-serif;
+$palmFontSetup : 200 normal 85%/1.6 open_sansregular, sans-serif;
+
+$bodyBackground   : #f1f1f1; 
+$bodyColour       : #777;
+
+$linkColour       : #1E8BC3;
+$linkColourHover  : #aaa;
+
+$secondaryLinkColour : #888;
+
+$brickSpacing  : 30px;
+$mortarDefault : 30px;
+
+$mainGutterPercentage : 8%;
+
+$brandColour : #1BA39C;
+$brandShade  : #66B166;
+
+$defaultGreyColour : #eee;
+
+$successColour          : #657e3c;
+$successHighlightColour : #edfdd3;
+$errorColour            : #bf210e;
+$errorHighlightColour   : #ffe6e3;
+$warningColour          : #956433;
+$warningHighlightColour : #fff7d6;
+
+$favouriteColour        : #ffac33;
+
+$palm     : '(max-width: 600px)';
+$lap      : '(max-width: 1199px)';
+$portable : '(max-width: 850px)';
+$desk     : '(min-width: 1200px)';
+
+// For CSS Wizardry Grid partial
+$breakpoints: (
+    'palm' $palm,
+    'lap' $lap,
+    'portable' $portable,
+    'desk' $desk
+)

@@ -1,0 +1,23 @@
+.main {
+    padding: 40px 40px;
+    margin: 0 auto;
+    max-width: 1450px;
+    margin-top: 60px;
+    min-height: calc(100vh - 220px);
+}
+@media only screen and #{$lap} {
+    .main {
+        padding: 30px 20px;
+        margin-top: 50px;
+    }
+}
+@media only screen and #{$palm} {
+    .main {
+        margin-top: 35px; 
+        min-height: 100%    
+    }
+}
+.is-bookmarklet .main {
+    padding: 20px;
+    margin-top: 0;
+}
