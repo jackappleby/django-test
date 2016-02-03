@@ -1,22 +1,19 @@
 {% load staticfiles %}
-{% load flatpages %}
 {% load i18n %}
 
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Django test</title>
+        <title>{% trans "Django test" %}</title>
         <link rel="stylesheet" href="{% static 'css/master.css' %}">
-        <meta name="lang" content="en-GB">
     </head>
     <body>
         <div class="main cf" role="main">
             {% include "includes/messages/message.html" %}
             {% block content %}{% endblock %}
         </div>
-        <div class="contentinfo js-contentinfo" role="contentinfo">
+        <div class="contentinfo" role="contentinfo">
             The footer
         </div>
     </body>
