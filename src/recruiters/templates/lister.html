@@ -1,0 +1,16 @@
+{% extends "master.html" %}
+{% load humanize %}
+
+
+{% block content %}
+
+    <h1>Recruiter A to Z</h1>
+
+    {% for recruiter in recruiters %}
+        <a href="{{ recruiter.get_absolute_url }}">{{ recruiter.name }}</a><br>
+
+        {{ recruiter.description|truncatewords:30 }}<br><br>
+
+    {% endfor %}
+
+{% endblock %}

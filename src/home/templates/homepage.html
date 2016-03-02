@@ -1,0 +1,60 @@
+{% extends "master.html" %}
+
+{% block content %}
+
+<h1>Homepage</h1>
+
+<p>So you've installed PIP and VirtualEnv? Great!!!1!!11!!1</p> No??..
+
+<ul>
+    <li>PIP is like NPM but for Python packages.
+        <pre>sudo easy_install pip</pre>
+    </li>
+    <li>Install VirtualEnv: <pre>sudo pip install virtualenv</pre> VirtualEnv creates an isolated python directory so you can have multiple Django, PIP package and even Python versions on one machine. Sort of like a, well VIRTUAL ENVIRONMENT.</li>
+</ul>
+<hr>
+<ul>
+    <li>Download <a href="https://github.com/jackappleby/django-test">Django Test</a> ✔︎</li>
+    <li>Create the virtualenv ✔︎
+        <pre>cd ~/some/path/to/django-test/
+virtualenv env</pre> Note: FFS don't check in your virtualenv, i.e. the 'env' folder. Add 'env' to igtignore
+    </li>
+    <li>ACTIVATE THE VIRTUALENV  ✔︎
+        <pre>source env/bin/activate</pre>
+    </li>
+    <li>Install the dependancies (this is like "npm install")  ✔︎
+        <pre>pip install -r requirements.txt</pre>
+    </li>
+    <li>Get the in-built Django development server going (No apache, IIS, blah blah needed!)  ✔︎
+        <pre>cd src
+python manage.py runserver</pre>
+    </li>
+    <li>Go to: <pre>http://localhost:8000/</pre> - This can be changed, IDK know</li>
+</ul>
+<hr>
+<ul>
+    <li>Install the <a href="http://django-debug-toolbar.readthedocs.org/en/1.4/installation.html">Django Debug Toolbar</a>. Because debugging is cool</li>
+    <li>Check out the <a href="{% url 'admin:index' %}">admin site</a></li>
+    <li>Create a Jobs app...</li>
+
+    <ul>
+        <li>
+            <pre>django-admin startapp jobs</pre>
+        </li>
+        <li>Add the jobs app to the settings</li>
+        <li>Add fields to the Job Model</li>
+        <li>Create your migration
+            <pre>python manage.py makemigrations</pre>
+        </li>
+        <li>Populate your DB
+            <pre>python manage.py migrate</pre>
+        </li>
+    </ul>
+<hr>
+
+
+<p><a href="{% url 'recruiters:root' %}">Recruiter A to Z</a></p>
+
+
+
+{% endblock %}
